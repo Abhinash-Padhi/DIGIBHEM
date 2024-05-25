@@ -149,7 +149,7 @@ marki.addEventListener("click",()=>{
     let obj=new Date()
     let a1=listEle.children[1]
     if(listEle.classList.contains("checked")){
-        a1.innerHTML = obj.getDate()+"/"(+obj.getMonth()+1)+"/"+obj.getFullYear()+","+obj.getHours()+":"+obj.getMinutes()+":"+obj.getSeconds()
+        a1.innerHTML = obj.getDate()+"/"+(+obj.getMonth()+1)+"/"+obj.getFullYear()+","+obj.getHours()+":"+obj.getMinutes()+":"+obj.getSeconds()
         let a=listEle.classList.toggle("checked")
         alert("Task added to the Pending Section")
         getComp()
