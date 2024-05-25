@@ -1,0 +1,160 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto auto;
+}
+body{
+    background : linear-gradient(155deg,#0440a0,#13b767);
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    margin-top: 100px;
+    background-color: rgb(255, 198, 119);
+    max-width: 600px;
+}
+header{
+    padding: 10px;
+}
+header h2{
+    position: relative;
+}
+header span{
+    margin-left: 100px;
+    font-weight: 500;
+}
+header a{
+    text-decoration:underline;
+    display: inline-block;
+    font-size: 15px;
+    padding: 0 15px;
+    cursor: pointer;
+    color: rgb(0, 0, 126);
+    border: 2px solid black;
+    border-radius: 20px;
+}
+header a:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+}
+.header img{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 2px;
+    padding-left: 15px;
+}
+#searchBar{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#searchBar input{
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+button{
+    margin-left: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 10px 25px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-weight: 800;
+}
+#searchBar button{
+    margin-left: 40px;
+}
+button:hover{
+    background-color: rgb(255, 106, 0);
+    color: rgb(180, 180, 180);
+}
+#contents{
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+#completed{
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+#pending{
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+ul{
+    list-style: none;
+    cursor: pointer;
+}
+ul li{
+    position: relative;
+    padding: 8px;
+    margin-right: 25px;
+    font-weight: 500;
+}
+ul li:hover{
+    background-color: rgb(247, 218, 178);
+}
+ul li::before{
+    position: absolute;
+    top: 12px;
+    left: -25px;
+    content: ' ';
+    background-image: url(img/square-regular.svg);
+    background-position: center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+ul li span{
+    position: absolute;
+    right: 5px;
+    width: 20px;
+    background: url(img/circle-xmark-regular.svg);
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+ul li span:hover{
+    background-color: red;
+}
+ul li div{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 8px;
+    font-weight: 900;
+}
+ul li.checked::before{
+    background-image: url(img/square-check-regular.svg);
+    background-color: green;
+}
+#dialogBox{
+    position: absolute;
+    z-index: 100;
+    display: none;
+    background-color: rgb(35, 33, 33);
+    width: 120px;
+    color: white;
+    border-radius: 10px;
+    font-size: 12px;
+}
+#dbul { 
+    padding: 0px; 
+    margin: 0px; 
+    list-style: none;
+    text-decoration: none;
+} 
+
+#dbul li { 
+    transition: 0.2s ease;
+    padding-bottom: 6px; 
+    padding-top: 6px; 
+    padding-left: 6px;
+    cursor: pointer;
+    border-radius: 10px;
+} 
+
+#dbul li:hover { 
+    background: rgb(54, 51, 51); 
+} 
